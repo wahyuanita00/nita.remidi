@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Beranda - Situs Remedial TKJ1</title>
+  <style>
+    /* INTERNAL CSS */
+    :root{
+      --accent: #0f7675;
+      --accent2: #06b6d4;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --muted: #6b7280;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg,var(--bg),#eef2f7);
+      color:#111827;
+      line-height:1.5;
+    }
+
+    /* Header / Nav */
+    header{
+      background: linear-gradient(90deg,var(--accent),var(--accent2));
+      color:white;
+      padding:14px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      color:white;
+    }
+    .logo .mark{
+      width:44px;height:44px;border-radius:8px;
+      background:rgba(255,255,255,0.15);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;font-size:18px;
+    }
+    nav ul{
+      margin:0;padding:0;list-style:none;display:flex;gap:12px;
+    }
+    nav a{
+      color:rgba(255,255,255,0.95);
+      text-decoration:none;padding:8px 12px;border-radius:8px;
+      font-weight:600;
+    }
+    nav a:hover{background:rgba(255,255,255,0.08)}
+
+    /* Main layout */
+    .container{max-width:920px;margin:28px auto;padding:0 16px}
+    .hero{
+      background:var(--card);
+      padding:24px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06);
+      display:flex;gap:20px;align-items:center;
+    }
+    .hero .text h1{margin:0 0 8px;font-size:24px;color:var(--accent)}
+    .hero .text p{margin:0;color:var(--muted)}
+
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 4px 12px rgba(16,24,40,0.04)}
+    .card h3{margin:0 0 8px;color:var(--accent)}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+
+    /* Footer */
+    footer{
+      margin-top:28px;padding:18px 16px;background:#0b1320;color:white;border-radius:10px;
+      display:flex;flex-direction:column;gap:8px;align-items:center;
+    }
+    .names{font-size:14px;color:#cfe9eb}
+    .small{font-size:12px;color:#9fb7b9}
+
+    /* Responsive */
+    @media (max-width:600px){
+      header{padding:12px}
+      .hero{flex-direction:column;align-items:flex-start}
+      nav ul{gap:8px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">
+      <div class="mark">TKJ</div>
+      <div>
+        <div style="font-weight:800">Situs Remedial TKJ1</div>
+        <div style="font-size:12px;opacity:0.95">Proyek Web Sederhana</div>
+      </div>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="text">
+        <h1>Selamat datang di Remedial TKJ1</h1>
+        <p>Website sederhana ini dibuat sebagai tugas UKK — berisi informasi, profil, dan cara menghubungi tim.</p>
+      </div>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h3>Materi Praktik</h3>
+        <p>Ringkasan latihan konfigurasi jaringan, layanan server, dan tugas-lab lain yang harus diselesaikan.</p>
+      </article>
+
+      <article class="card">
+        <h3>Tugas & Remedial</h3>
+        <p>Daftar tugas remedial dan petunjuk pengerjaan. Pastikan mengikuti langkah-langkah dengan teliti.</p>
+      </article>
+
+      <article class="card">
+        <h3>Kontak Tim</h3>
+        <p>Butuh bantuan? Kunjungi halaman Kontak untuk mengirim pesan atau melihat nama-nama pengurus.</p>
+      </article>
+    </section>
+
+    <footer>
+      <div class="names">
+        Nama siswa yang mengumpulkan (ganti sesuai kelas):<br>
+        1. Nama Siswa A &nbsp; 2. Nama Siswa B &nbsp; 3. Nama Siswa C
+      </div>
+      <div class="small">© 2025 Remedial TKJ1 — Dibuat dengan HTML &amp; CSS internal</div>
+    </footer>
+  </main>
+</body>
+</html>
