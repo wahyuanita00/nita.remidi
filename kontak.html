@@ -1,130 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Kontak - Situs Remedial TKJ1</title>
-    <style>
-      :root {
-        --accent: #0f7675;
-        --bg: #f8fafc;
-        --card: #fff;
-        --muted: #6b7280;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: var(--bg);
-      }
-      header {
-        background: linear-gradient(90deg, var(--accent), #06b6d4);
-        color: white;
-        padding: 12px 16px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        gap: 10px;
-      }
-      nav a {
-        color: white;
-        text-decoration: none;
-        padding: 6px 10px;
-        border-radius: 8px;
-      }
-      .container {
-        max-width: 760px;
-        margin: 20px auto;
-        padding: 0 16px;
-      }
-      .card {
-        background: var(--card);
-        padding: 18px;
-        border-radius: 12px;
-        box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
-      }
-      label {
-        display: block;
-        margin-top: 10px;
-        font-weight: 600;
-      }
-      input[type="text"],
-      input[type="email"],
-      textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #e6e9ee;
-        border-radius: 8px;
-        margin-top: 6px;
-        font-size: 14px;
-      }
-      button {
-        margin-top: 12px;
-        padding: 10px 14px;
-        border-radius: 8px;
-        border: none;
-        background: var(--accent);
-        color: white;
-        font-weight: 700;
-        cursor: pointer;
-      }
-      footer {
-        margin-top: 18px;
-        padding: 14px;
-        background: #0b1320;
-        color: white;
-        border-radius: 8px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <a class="logo" href="index.html" style="display: flex; gap: 12px; align-items: center; color: white; text-decoration: none">
-        <div style="width: 40px; height: 40px; background: rgba(255, 255, 255, 0.15); display: flex; align-items: center; justify-content: center; border-radius: 8px; font-weight: 700">TKJ</div>
-        <div>
-          <div style="font-weight: 800">Situs Remedial TKJ1</div>
-          <div style="font-size: 12px">Kontak</div>
-        </div>
-      </a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontak - Situs Remedial TKJ1</title>
+  <style>
+    :root{--accent:#0f7675;--bg:#f8fafc;--card:#fff;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg)}
+    header{background:linear-gradient(90deg,var(--accent),#06b6d4);color:white;padding:12px 16px;display:flex;justify-content:space-between;align-items:center}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:10px}
+    nav a{color:white;text-decoration:none;padding:6px 10px;border-radius:8px}
+    .container{max-width:760px;margin:20px auto;padding:0 16px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    label{display:block;margin-top:10px;font-weight:600}
+    input[type="text"], input[type="email"], textarea{
+      width:100%;padding:10px;border:1px solid #e6e9ee;border-radius:8px;margin-top:6px;font-size:14px
+    }
+    button{margin-top:12px;padding:10px 14px;border-radius:8px;border:none;background:var(--accent);color:white;font-weight:700;cursor:pointer}
+    footer{margin-top:18px;padding:14px;background:#0b1320;color:white;border-radius:8px;text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html" style="display:flex;gap:12px;align-items:center;color:white;text-decoration:none">
+      <div style="width:40px;height:40px;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;border-radius:8px;font-weight:700">TKJ</div>
+      <div>
+        <div style="font-weight:800">Situs Remedial TKJ1</div>
+        <div style="font-size:12px">Kontak</div>
+      </div>
+    </a>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="kontak.html">Kontak</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="container">
-      <section class="card">
-        <h2>Kontak Kami</h2>
-        <p>Isi form berikut untuk mengirim pesan (note: ini hanya form statis — untuk mengirim perlu backend / action server).</p>
+  <main class="container">
+    <section class="card">
+      <h2>Kontak Kami</h2>
+      <p>Isi form berikut untuk mengirim pesan (note: ini hanya form statis — untuk mengirim perlu backend / action server).</p>
 
-        <form>
-          <label for="name">wahyu anita</label>
-          <input id="name" type="text" placeholder="Nama lengkap" required />
+      <form>
+        <label for="name">Nama</label>
+        <input id="name" type="text" placeholder="wahyu anita" required>
 
-          <label for="email">wwahyuaanita.008@gmail.com</label>
-          <input id="email" type="email" placeholder="contoh@domain.com" required />
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="wahyuanita@gmail.com" required>
 
-          <label for="message">Pesan</label>
-          <textarea id="message" rows="6" placeholder="Tulis pesan atau pertanyaan..." required></textarea>
+        <label for="message">Pesan</label>
+        <textarea id="message" rows="6" placeholder="tugas remidi wahyu anita" required></textarea>
 
-          <button type="submit">Kirim Pesan</button>
-        </form>
-      </section>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
 
-      <footer>wahyu anita</footer>
-    </main>
-  </body>
+    <footer>
+      wahyu anita
+    </footer>
+  </main>
+</body>
 </html>
